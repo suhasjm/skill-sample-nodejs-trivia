@@ -7,7 +7,7 @@ module.exports = {
      */
     QUESTIONS_EN_GB: [
         {
-            'Reindeer have very thick coats, how many hairs per square inch do they have?': [
+            'Suhas have very thick coats, how many hairs per square inch do they have?': [
                 '13,000',
                 '1,200',
                 '5,000',
