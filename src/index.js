@@ -59,19 +59,19 @@ const languageString = {
     'en-US': {
         'translation': {
             'QUESTIONS': questions['QUESTIONS_EN_US'],
-            'GAME_NAME': 'American Reindeer Trivia', // Be sure to change this for your skill.
+            'GAME_NAME': 'Friends Trivia', // Be sure to change this for your skill.
         },
     },
     'en-GB': {
         'translation': {
             'QUESTIONS': questions['QUESTIONS_EN_GB'],
-            'GAME_NAME': 'British Reindeer Trivia', // Be sure to change this for your skill.
+            'GAME_NAME': 'Friends Trivia', // Be sure to change this for your skill.
         },
     },
     'de': {
         'translation': {
             'QUESTIONS': questions['QUESTIONS_DE_DE'],
-            'GAME_NAME': 'Wissenswertes über Rentiere in Deutsch', // Be sure to change this for your skill.
+            'GAME_NAME': 'Friends Trivia', // Be sure to change this for your skill.
             'HELP_MESSAGE': 'Ich stelle dir %s Multiple-Choice-Fragen. Antworte mit der Zahl, die zur richtigen Antwort gehört. ' +
                 'Sage beispielsweise eins, zwei, drei oder vier. Du kannst jederzeit ein neues Spiel beginnen, sage einfach „Spiel starten“. ',
             'REPEAT_QUESTION_MESSAGE': 'Wenn die letzte Frage wiederholt werden soll, sage „Wiederholen“ ',
@@ -224,7 +224,7 @@ function handleUserGuess(userGaveUp) {
         let repromptText = this.t('TELL_QUESTION_MESSAGE', questionIndexForSpeech.toString(), spokenQuestion);
 
         for (let i = 0; i < ANSWER_COUNT; i++) {
-            repromptText += `${i + 1}. ${roundAnswers[i]}. `;
+            repromptText += `Option ${i + 1}. ${roundAnswers[i]}. `;
         }
 
         speechOutput += userGaveUp ? '' : this.t('ANSWER_IS_MESSAGE');
@@ -261,7 +261,7 @@ const startStateHandlers = Alexa.CreateStateHandler(GAME_STATES.START, {
         let repromptText = this.t('TELL_QUESTION_MESSAGE', '1', spokenQuestion);
 
         for (let i = 0; i < ANSWER_COUNT; i++) {
-            repromptText += `${i + 1}. ${roundAnswers[i]}. `;
+            repromptText += `Option ${i + 1}. ${roundAnswers[i]}. `;
         }
 
         speechOutput += repromptText;
