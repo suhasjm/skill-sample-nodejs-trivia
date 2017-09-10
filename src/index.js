@@ -52,7 +52,7 @@ const languageString = {
             'CORRECT_ANSWER_MESSAGE': 'The correct answer is %s: %s. ',
             'ANSWER_IS_MESSAGE': 'That answer is ',
             'TELL_QUESTION_MESSAGE': 'Question %s. %s ',
-            'GAME_OVER_MESSAGE': 'You got %s out of %s questions correct. Thank you for playing! To play more please visit www.how well do you kknow friends.com. Good bye.',
+            'GAME_OVER_MESSAGE': 'You got %s out of %s questions correct. Thank you for playing! To play more please visit www dot how well do you know friends dot com. Good bye.',
             'SCORE_IS_MESSAGE': 'Your score is %s. ',
         },
     },
